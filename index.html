@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="يارا السيد  ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>طلاب الإعدادي</title>
+  <style>
+    :root {
+      --main-color: #a6b9c4;
+      --main-hover: #a6c0b9;
+      --bg-color: #c0f0ed;
+      --text-color: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      direction: rtl;
+      color: var(--text-color);
+      background-image: url("catatan, abstrak, pastel, estetik, lucu, latar….jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      min-height: 100vh;
+      backdrop-filter: brightness(0.95);
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.8); /* شفافية خلفية المحتوى */
+      padding: 20px;
+      border-radius: 10px;  
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+    ul li{
+      padding:3px;
+    color: #3f644a;
+    }
+    .accordion {
+      background-color: var(--main-color);
+      color: rgb(37, 35, 35);
+      cursor: pointer;
+      padding: 16px;
+      width: 100%;
+      border: none;
+      text-align: right;
+      outline: none;
+      font-size: 18px;
+      transition: 0.3s;
+      border-radius: 6px;
+      margin-bottom: 6px;
+    }
+    #grades-section{
+      text-align: center;
+    }
+
+    .accordion:hover, .accordion.active {
+      background-color: var(--main-hover);
+    }
+
+    .panel {
+      background-color: white;
+      border: 1px solid #ccc;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.3s ease-out;
+      border-radius: 0 0 6px 6px;
+      padding: 0 16px;
+    }
+
+    .item {
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .item:last-child {
+      border-bottom: none;
+    }
+
+    .item a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: bold;
+    }
+
+    .item a:hover {
+      color: var(--main-color);
+    }
+
+    @media (max-width: 768px) {
+      .accordion {
+        font-size: 16px;
+        padding: 14px;
+      }
+
+      .item {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+
+      .accordion {
+        font-size: 15px;
+        padding: 12px;
+      }
+
+      .item {
+        font-size: 14px;
+        padding: 10px 0;
+      }
+
+      h1, h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="section">
+    <h2>المراحل الدراسية</h2>
+    <div id="grades-section"></div>
+  </div>
+
+  <div class="section">
+    <h2>معلومات إضافية</h2>
+    <button class="accordion">المشكله </button>
+    <div class="panel">
+    <ol>
+    <li><div class="item">التسويف</div></li>
+    <li><div class="item">مش شايف اهميه للمزاكره</div></li>
+      <li><div class="item">الكسل</div></li>
+      <li><div class="item">التشتت</div></li>
+      <Li><div class="item">عدم الانتظام</Li>
+      </div>
+    </div>
+  </ol>
+    <button class="accordion">الحل</button>
+    <div class="panel">
+  <ol>
+  <li> <div class="item">اول حاجه لازم تعرف/ي انت بتزاكر ليه هدفك اي علشان تفكر/ي نفسك كل ما تسوف/ي و تعرف/ي بتسوف/ي ليه اصلا 
+    <ul>
+      <li>لو بسبب التليفون ممكن تنزل/ي keep me out  و تحطه/يه في اي مكان غير اللي بتزاكر/ي فيه 
+    </li>
+  <li>الدرس كبير ف محبط/ه ممكن تقسمه لاجزاء صغيره و تزاكر جزء جزء</li>
+      <li>
+        رتب أولوياتك بطريقه مصفوفه ايزنهاور هام و عاجل و هام و غير عاجل و غير هام و عاجل و غير هام و غير عاجل
+    </li>
+    <li>كافئ نفسك بحاجه بسيطه اما تخلص اللي وراك</li>
+  </ul>
+  </div>
+  <li> <div class="item">هنا يجي دور البيئه و العقليه
+    <ul>    <li>المدخلات اللي بتخش دماغك غلط زي السوشيال ميديا اللي الناس تطلع تقول عملت فلوس من غير المزاكره و انها ملهاش لازمه و انت اصا متعرفش هو جاب الفلو زي منين بس بتصدق و خلاص</li>
+    <li>عقلك بيقنعك ب كدا علشان العق البشري عموما بيحب الراحه ف تتزنق في deadline و تسوف ف هو العقل البشري بيفضل المتعه اللحظيه عن المتعه اللي بعد فتره طويله</li>
+        <li>لو انت بيئتك زي صحابك و كدا مش بيهتموا بالمزاكره ف طبيعي تبقى زيهم اصل لمرء على دين خليله
+        </li>
+  </ul>
+  <li> <div class="item">
+    <ul>   
+    <li>ممكن يكون ده بسبب تعفن الدماغ اللي بيحصل بعد تمسك الالكترونيات وقت طويل ف بيخليك اما تقعد دقتين على الكتاب ملان  ف لازم تقلل/ي استخدام التليفون على قد م تقدر يعني اخرك بكتير ممكن يكون 3 ساعات</li>
+      <li>اعمل عقاب   لو مخلصتش اللي وراك و اعمل مكافأه لو خلصت </li> 
+      <li>متبدأش بحماس و تروح مزاكر الدرس اللي جاي تتحطن نفسك مزاكره زياده علشان في الاخر الحماس هيروح و هتزهق على الاخر</li>
+    </div>
+<li><div class="item">عدم الالتزام </div></li>
+      <uL>
+    <li>زي م قولنا قبل كدا متبدأش بحماس</li>
+  </ul>
+    <ul>   
+    <li>راقب نفسك و اتعلم من خطأك شوف انت مش ملزتم ليه انهارده و اكتب و بعدها اكتب حلول مش حل واحد علشان لو وحد منفعش جرب التاني</li>
+  </ul>
+  <br>
+    </ol>
+    </div>
+  </div>
+</div>
+
+<script>
+  const grades = [
+    {
+      name: "الصف الأول الإعدادي",
+      subjects: [
+        { name: "اللغة العربية", url: "عربي.html" },
+        { name: "الدراسات الاجتماعية", url: "دراسات اجتماعبه.html" },
+        { name: "الرياضيات / Math", url: "ماث.html" },
+        { name: "العلوم / Science", url: "ساينس.html" },
+        { name: "اللغة الإنجليزية / English", url: "english.html" }
+      ]
+    },
+    {
+      name: "الصف الثاني الإعدادي",
+      subjects: [
+        { name: "اللغة العربية", url: "عربي1.html" },
+        { name: "الدراسات الاجتماعية", url: "1دراسات  اجتكماعيه.html" },
+        { name: "الرياضيات / Math", url: "ماث و رياضيا1ت.html" },
+        { name: "العلوم / Science", url: "1علوم.html" },
+        { name: "اللغة الإنجليزية / English", url: "1english.html" }
+      ]
+    },
+    {
+      name: "الصف الثالث الإعدادي",
+      subjects: [
+        { name: "اللغة العربية", url: "عربي3.html" },
+        { name: "الدراسات الاجتماعية", url: "دراسات اجتماعيه 3.html" },
+        { name: "الرياضيات / Math", url: "3math.html" },
+        { name: "العلوم / Science", url: "science3.html" },
+        { name: "اللغة الإنجليزية / English", url: "english3.html" }
+      ]
+    }
+  ];
+
+  const container = document.getElementById("grades-section");
+
+  grades.forEach(grade => {
+    const btn = document.createElement("button");
+    btn.className = "accordion";
+    btn.innerText = grade.name;
+
+    const panel = document.createElement("div");
+    panel.className = "panel";
+
+    grade.subjects.forEach(subject => {
+      const item = document.createElement("div");
+      item.className = "item";
+
+      const link = document.createElement("a");
+      link.href = subject.url;
+      link.innerText = subject.name;
+
+      item.appendChild(link);
+      panel.appendChild(item);
+    });
+
+    container.appendChild(btn);
+    container.appendChild(panel);
+  });
+
+  // Accordion functionality
+  document.addEventListener("DOMContentLoaded", () => {
+    const accordions = document.querySelectorAll(".accordion");
+    accordions.forEach(acc => {
+      acc.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
